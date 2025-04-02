@@ -312,9 +312,10 @@ struct FemtoUniversePairTaskTrackV0Extended {
 
     /// Histogramming same event
     for (const auto& part : groupPartsTwo) {
-      if (!invMLambda(part.mLambda(), part.mAntiLambda()))Core/FemtoUniverseParticleHisto.h
+      if (!invMLambda(part.mLambda(), part.mAntiLambda()))
+        Core / FemtoUniverseParticleHisto.h
 
-        continue;
+               continue;
       const auto& posChild = parts.iteratorAt(part.index() - 2);
       const auto& negChild = parts.iteratorAt(part.index() - 1);
       /// Daughters that do not pass this condition are not selected
